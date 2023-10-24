@@ -50,6 +50,7 @@ public class SaveActivity extends AppCompatActivity {
 
 
 
+
         recyclerView1.setLayoutManager(new LinearLayoutManager(this));
         recyclerView1.setAdapter(new listAdapter(getApplicationContext(),items_ganday));
 
