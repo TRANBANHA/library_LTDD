@@ -1,10 +1,13 @@
 package com.example.ezcook_library;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,10 +24,11 @@ public class CollectionFragment extends Fragment {
 
     private RecyclerView rcvCollection;
     private View mviewCollection;
+private Button btn_create;
+
     public CollectionFragment() {
         // Required empty public constructor
     }
-
 
 
     @Override
@@ -43,6 +47,8 @@ public class CollectionFragment extends Fragment {
         //chia cot
         GridLayoutManager gridLayoutManager=new GridLayoutManager(getContext(),2);
         rcvCollection.setLayoutManager(gridLayoutManager);
+
+
 
         return mviewCollection;
     }
