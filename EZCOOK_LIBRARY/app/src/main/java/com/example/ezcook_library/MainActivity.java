@@ -18,18 +18,28 @@ public class MainActivity extends AppCompatActivity {
     private ViewPagerAdapter_Library mViewPagerAdapter_Library;
 
 
-private Button btn_create;
+    private Button btn_create;
+
+    private Button btn_chitiet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn_create = (Button) findViewById(R.id.btn_create);
+        btn_chitiet = (Button) findViewById(R.id.btn_chitiet);
         btn_create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, CreateActivity.class);
                 startActivity(intent);
+            }
+        });
+        btn_chitiet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(MainActivity.this, f_DetailActivity.class);
+                startActivity(intent2);
             }
         });
 

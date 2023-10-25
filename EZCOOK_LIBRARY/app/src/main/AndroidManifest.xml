@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
 <activity android:name=".CreateActivity"/>
+        <activity android:name=".f_DetailActivity"/>
     </application>
 
 </manifest>
